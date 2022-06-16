@@ -1,0 +1,12 @@
+.container3 {
+    display: none;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: 25em;
+    grid-gap: 10px;
+}
+.container3 div{
+    color:white;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
