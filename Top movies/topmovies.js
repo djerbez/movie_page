@@ -12,8 +12,7 @@ const createHTMLAddTop = async (movie) => {
   const malidiv = document.createElement("div");
   const img = document.createElement("img");
   img.src = imagePrefix2 + movie.poster_path;
-  img.classList.add("img");
-  img.classList.add("zoom");
+  img.classList.add("img", "zoom");
   malidiv.classList.add("text");
   malidiv.innerText = movie.original_title;
   mainDiv2.appendChild(malidiv);
