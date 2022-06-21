@@ -2,10 +2,10 @@ const mainDiv3 = document.querySelector(".container3");
 const div = document.querySelector(".container");
 const div1 = document.querySelector(".container1");
 const div2 = document.querySelector(".container2");
-const p = document.querySelector(".p");
-const p1 = document.querySelector(".p1");
-const p2 = document.querySelector(".p2");
-const prefix3 = "https://image.tmdb.org/t/p/w500/";
+const paragraph = document.querySelector(".paragraph");
+const paragraph1 = document.querySelector(".paragraph1");
+const paragraph2 = document.querySelector(".paragraph2");
+const imagePrefix3 = "https://image.tmdb.org/t/p/w500/";
 const input = document.getElementById("searchMovie");
 const addSearch = async (movie) => {
   input.addEventListener("keydown", async function (event) {
@@ -29,7 +29,7 @@ const addSearchedMovies = async (movie) => {
 const createHTMLSearchedMovies = async (movie) => {
   const malidiv = document.createElement("div");
   const img = document.createElement("img");
-  img.src = prefix3 + movie.poster_path;
+  img.src = imagePrefix3 + movie.poster_path;
   img.classList.add("img");
   img.classList.add("zoom");
   malidiv.classList.add("text");
@@ -42,9 +42,9 @@ function hideDiv() {
   div.style.display = "none";
   div1.style.display = "none";
   div2.style.display = "none";
-  p.style.display = "none";
-  p1.style.display = "none";
-  p2.style.display = "none";
+  paragraph.style.display = "none";
+  paragraph1.style.display = "none";
+  paragraph2.style.display = "none";
   mainDiv3.style.display = "grid";
   mainDiv3.innerHTML = "";
 }
@@ -52,8 +52,8 @@ function showDiv() {
   div.style.display = "grid";
   div1.style.display = "grid";
   div2.style.display = "grid";
-  p.style.display = "block";
-  p1.style.display = "block";
-  p2.style.display = "block";
+  paragraph.style.display = "block";
+  paragraph1.style.display = "block";
+  paragraph2.style.display = "block";
   mainDiv3.innerHTML = "";
 }

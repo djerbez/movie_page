@@ -29,7 +29,7 @@ max-height:100%;
 .zoom:hover {
   transform: scale(1.1);
 }
-.p1 {
+.paragraph1 {
     margin: auto;
     width: 50%;
     font-size: 30px;
