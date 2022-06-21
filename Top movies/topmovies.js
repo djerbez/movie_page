@@ -5,7 +5,6 @@ const prefix2 = "https://image.tmdb.org/t/p/w500/";
 const addTop = async (movie) => {
   const movies = await fetch(`${topmovies}`).catch((err) => console.log(err));
   const data = await movies.json().catch((err) => console.log(err));
-  console.log(data);
   const data2 = data.results;
   data2.forEach(createHTMLAddTop);
 };

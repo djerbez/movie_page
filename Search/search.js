@@ -23,7 +23,6 @@ const addSearchedMovies = async (movie) => {
     `https://api.themoviedb.org/3/search/movie?api_key=ac611aa60fbb0355792b075ff8337fbe&language=en-US&query=${input.value}&page=1&include_adult=true`
   ).catch((err) => console.log(err));
   const data = await movies.json().catch((err) => console.log(err));
-  console.log(data);
   const data2 = data.results;
   data2.forEach(createHTMLSearchedMovies);
 };
