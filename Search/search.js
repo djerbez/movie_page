@@ -9,7 +9,6 @@ const imagePrefix3 = "https://image.tmdb.org/t/p/w500/";
 const input = document.getElementById("searchMovie");
 const addSearch = async (movie) => {
   input.addEventListener("keydown", async function (event) {
-    console.log(input.value);
     if (input.value.length >= 3) {
       hideDiv();
       addSearchedMovies();
